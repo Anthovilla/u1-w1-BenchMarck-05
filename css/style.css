@@ -1,16 +1,19 @@
 /* Your styles here */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 /* Styles generali */
 body {
+    font-family: 'Open Sans', sans-serif;
     margin: auto;
     width: 450px;
 }
 main {
-    margin: 2em 1em;
+    margin: 0em 1em;
     text-align: center;
 }
 h1,h3 {
+
     color: #25a2c3;
 }
 h1 { 
@@ -18,11 +21,16 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
-h2 {font-size: 2em;}
-h3 { font-size: 1.3em;
-    font-weight: bold;
+h2 {font-size: 2em;
+font-weight: bold;
+margin: 1em 0em 1em;
 }
-p {font-size: 1em;
+h3 { font-size: 1.5em;
+    font-weight: bold;
+    margin: 30px;
+}
+p {font-size: 1.5em;
+    margin: 1em 0em 1em;
 }
 button {
     font-size: 1em;color: #25a2c3;
@@ -32,6 +40,8 @@ button {
     box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.5);;
     color: white;
     background-color: orange;
+    padding: 10px 30px;
+    margin-bottom: 2em;
 }
 .conteiner {
     margin: auto;
@@ -39,23 +49,61 @@ button {
 
 /* Style Header */
 
-#logo {
-    background-image: url(../images/logo.png);
-    background-position: center;
-width: 50px;
+#hero {
+    margin: 0em 0em 1em;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 1em 0em 1em;
 }
-header {
+#hero p {
+    margin: 1.2em 0em;
+    line-height: 1.5em;
+    padding-top: 1em;
+}
+
+/* Style main */
+
+article {
     line-height: 1.5em;
     background-color: rgb(0, 0, 0);
     color: azure;
 }
+.img-containerpc {
+    background-image: url(../images/notebook.jpg);
+}
+#epicode-garantisce {
+    background-color: rgb(247, 79, 1);
+    color: white;
+    padding: 1em 0em 1em;
+}
+#epicode-garantisce p {
+    margin-bottom: 1em;
+}
+#boxes {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.box:first-child{
+    background-image: url(../images/foto1.jpg);
 
+}
+.box:nth-child(2){
+    background-image: url(../images/foto2.jpg);
 
+}
+.box:nth-child(3){
+    background-image: url(../images/foto3.jpg);
 
+}
 
-
-
-footer {
+/*  Style Footer */
+#footer {
     margin: 2em 1em;
     text-align: center;
+    background-color: #25a2c3;
+    color: white;
+    padding: 0.5em 0em 1.3em;
 }
